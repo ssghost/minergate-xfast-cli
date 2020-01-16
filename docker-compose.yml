@@ -3,6 +3,6 @@ services:
   xmr-xfast-container: 
     command: ['-user', 'miningaddress@gmx-topmail.de', '-xmr'] 
     container_name: xmr-xfast-container 
-    image: alimuratgymn/minergate-xfast-cli:latest_withcuda 
+    image: alimuratgymn/minergate-xfast-cli 
     restart: unless-stopped 
     network_mode: bridge 
