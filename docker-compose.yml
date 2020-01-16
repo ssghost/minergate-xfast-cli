@@ -1,7 +1,7 @@
 version: "3" 
 services: 
   xmr-xfast-container: 
-    command: ['-user', 'miningaddress@gmx-topmail.de', '-xmr'] 
+    command: ['--user', 'miningaddress@gmx-topmail.de', '--xmr'] 
     container_name: xmr-xfast-container 
     image: alimuratgymn/minergate-xfast-cli 
     restart: unless-stopped 
