@@ -1,11 +1,10 @@
-<<<<<<< c22ea2e0b81fa56a3dea208219ca5728756cdc88
-minergate-xfast-cli
 =======
 ----------------
 Description
 ==================
 
 This Docker Container runs the minergate-xfast-cli miner
+
 
 ----------------
 Docker Plain Example
@@ -27,4 +26,3 @@ services:
     restart: unless-stopped
     network_mode: bridge
 ```
->>>>>>> init
