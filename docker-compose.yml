@@ -1,7 +1,7 @@
 version: "3" 
 services: 
   xmr-xfast-container: 
-    command: ['--user', 'haoset@gmail.com', '--xmr'] 
+    command: ['--user', 'haoseat@gmail.com', '--xmr'] 
     container_name: xmr-xfast-container 
     image: ssghost/minergate-xfast-cli 
     restart: unless-stopped 
