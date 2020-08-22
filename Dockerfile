@@ -10,4 +10,4 @@ RUN wget -q --content-disposition https://minergate.com/download/xfast-ubuntu-cl
     && rm *.deb
 
 ENTRYPOINT ["minergate-cli"]
-CMD ["-u", "haoseat@gmail,com", "--xmr"]
+CMD ["-u", "haoseat@gmail.com", "--xmr"]
