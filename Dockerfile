@@ -8,7 +8,7 @@ RUN apt-get update \
 RUN cd /tmp \
     && wget -q https://www2.ati.com/drivers/linux/ubuntu/amdgpu-pro-17.40-492261.tar.xz \
     && tar -Jxvf amdgpu-pro-17.40-492261.tar.xz \
-    && cd /amdgpu-pro-17.40-492261
+    && cd /amdgpu-pro-17.40-492261 \
     && ./amdgpu-pro-install –y
     
 RUN wget -q --content-disposition https://minergate.com/download/xfast-ubuntu-cli-amd \
