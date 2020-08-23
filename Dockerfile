@@ -9,7 +9,7 @@ RUN wget -q http://mirrors.kernel.org/ubuntu/pool/main/n/numactl/libnuma1_2.0.11
     && dpkg -i *.deb \ 
     && rm *.deb    
     && wget -q -O - http://repo.radeon.com/rocm/rocm.gpg.key | sudo apt-key add - \
-    && echo 'deb [arch=amd64] http://repo.radeon.com/rocm/apt/debian/ xenial main' | sudo tee /etc/apt/sources.list.d/rocm.list \
+    && echo 'deb [arch=amd64] http://repo.radeon.com/rocm/apt/debian/ bionic main' | sudo tee /etc/apt/sources.list.d/rocm.list \
     && apt install rocm-dkms \
     && apt-get -qq --no-install-recommends install dkms rock-dkms rocm-opencl-dev \
     && echo 'export PATH=$PATH:/opt/rocm/bin' > ~/.bashrc \
