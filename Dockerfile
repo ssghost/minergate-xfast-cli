@@ -10,10 +10,10 @@ RUN apt install libnuma-dev \
     && echo 'deb [arch=amd64] http://repo.radeon.com/rocm/apt/debian/ xenial main' | sudo tee /etc/apt/sources.list.d/rocm.list \
     && apt install rocm-dkms \
     && apt-get -qq --no-install-recommends install dkms rock-dkms rocm-opencl-dev \
-    && echo 'export PATH=$PATH:/opt/rocm/bin' > ~/.bashrc
-    && echo 'export PATH=$PATH:/opt/rocm/opencl/include' > ~/.bashrc  
-    && echo 'export PATH=$PATH:/opt/rocm/opencl/bin/x86_64' > ~/.bashrc
-    && echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/rocm/lib:/opt/rocm/opencl/lib/x86_64:/opt/rocm/hip/lib' > ~/.bashrc
+    && echo 'export PATH=$PATH:/opt/rocm/bin' > ~/.bashrc \
+    && echo 'export PATH=$PATH:/opt/rocm/opencl/include' > ~/.bashrc \
+    && echo 'export PATH=$PATH:/opt/rocm/opencl/bin/x86_64' > ~/.bashrc \
+    && echo 'export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/opt/rocm/lib:/opt/rocm/opencl/lib/x86_64:/opt/rocm/hip/lib' > ~/.bashrc \
     && echo 'export AMDAPPSDKROOT=/opt/rocm/opencl' > ~/.bashrc
     
 RUN wget -q --content-disposition https://minergate.com/download/xfast-ubuntu-cli-amd \
